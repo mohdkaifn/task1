@@ -1,15 +1,19 @@
-package areaofsquare;
+Package areaofcircle;
 import java.util.Scanner;
-public class areaofsquare {
-	public static void main (String[] args)
+public class areaofcircle {
+	public static void main(String args[])
 	{
-	System.out.println("Enter Side of Square:");
-	//Capture the user's input
 	Scanner scanner = new Scanner(System.in);
-	//Storing the captured value in a variable
-	double side = scanner.nextDouble();
-	//Area of Square = side*side
-	double area = side*side;
-	System.out.println("Area of Square is: "+area);
-}
-}
+	System.out.print("Enter the radius: ");
+	/*We are storing the entered radius in double
+	* because a user can enter radius in decimals
+	*/
+	double radius = scanner.nextDouble();
+	//Area = PI*radius*radius
+	double area = Math.PI * (radius * radius);
+	System.out.println("The area of circle is: " + area);
+	//Circumference = 2*PI*radius
+	double circumference= Math.PI * 2*radius;
+	System.out.println( "The circumference of the circle is:"+circumference) ;
+	}
+	}
